@@ -17,8 +17,9 @@ public class AppTest {
         WebDriver driver = new InternetExplorerDriver();					
         	
         String baseUrl = "http://demo.guru99.com/test/login.html";					
-        driver.get(baseUrl);					
-        driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
+        driver.get(baseUrl);
+        
+       // driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
         // Get the WebElement corresponding to the Email Address(TextField)		
         WebElement email = driver.findElement(By.id("email"));							
 
